@@ -1,18 +1,18 @@
 package edu.unq.vainilla.arkanoid.desktop
 
-import edu.unq.vainilla.arkanoid.{ArkanoidGame, GameConfigurator}
-import edu.unq.vainilla.desktop.VanillaEngine
+import edu.unq.vainilla.arkanoid.{ArkanoidMainScene, GameConfigurator}
+import edu.unq.vainilla.desktop.VainillaEngine
 
 object DesktopLauncher {
 
   def main(args: Array[String]) {
-    VanillaEngine.mainScene = new ArkanoidGame
-    VanillaEngine.configurators += new GameConfigurator
-    VanillaEngine.configurators += new DesktopConfigurator
-    VanillaEngine.delegateInput   //Use this if you want your scenes to handle user input
+    VainillaEngine.mainScene = new ArkanoidMainScene
+    VainillaEngine.configurators += new GameConfigurator
+    VainillaEngine.configurators += new DesktopConfigurator
+    VainillaEngine.delegateInput //Use this if you want your scenes to handle user input
 //    VanillaEngine.inputHandler = new YourInputHandler //Manually set a single input handler
 
-    VanillaEngine.start
+    VainillaEngine.start
   }
 
 }
