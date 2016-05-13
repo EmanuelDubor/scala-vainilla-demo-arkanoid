@@ -5,11 +5,11 @@ sourceCompatibility = 1.6
 sourceSets.main.java.srcDirs = [ "src/" ]
 sourceSets.main.scala.srcDirs = [ "src/" ]
 
-project.ext.mainClassName = "edu.unq.vainilla.demo.desktop.DesktopLauncher"
+project.ext.mainClassName = "edu.unq.vainilla.arkanoid.desktop.DesktopLauncher"
 project.ext.assetsDir = new File("../core/assets");
 
 dependencies {
-    compile project(":demo-core")
+    compile project(":arkanoid-core")
     compile project(":vainilla-desktop")
 }
 
@@ -36,7 +36,7 @@ dist.dependsOn classes
 
 eclipse {
     project {
-        name = appName + "-demo-desktop"
+        name = appName + "-desktop"
         linkedResource name: 'assets', type: '2', location: 'PARENT-1-PROJECT_LOC/core/assets'
     }
 }

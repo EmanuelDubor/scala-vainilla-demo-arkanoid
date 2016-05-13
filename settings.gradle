@@ -1,7 +1,7 @@
 include 'core'
-findProject(':core')?.name = 'demo-core'
+findProject(':core')?.name = 'arkanoid-core'
 include 'desktop'
-findProject(':desktop')?.name = 'demo-desktop'
+findProject(':desktop')?.name = 'arkanoid-desktop'
 
 include ':vainilla-core'
 project(':vainilla-core').projectDir = new File(settingsDir, '../scala-vainilla/vainilla-core')

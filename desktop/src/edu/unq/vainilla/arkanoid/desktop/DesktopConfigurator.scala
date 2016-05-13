@@ -1,4 +1,4 @@
-package edu.unq.vainilla.demo.desktop
+package edu.unq.vainilla.arkanoid.desktop
 
 import edu.unq.vainilla.core.configuration.{Configuration, Configurator}
 

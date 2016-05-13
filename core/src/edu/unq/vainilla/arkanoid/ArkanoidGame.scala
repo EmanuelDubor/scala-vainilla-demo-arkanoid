@@ -1,11 +1,11 @@
-package edu.unq.vainilla.demo
+package edu.unq.vainilla.arkanoid
 
 import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import edu.unq.vainilla.core.input.InputHandler
 import edu.unq.vainilla.core.{GameScene, VanillaGame}
 
-class DemoGame extends GameScene with InputHandler {
+class ArkanoidGame extends GameScene with InputHandler {
 
   var img: Texture = _
   var imgX: Int = 0
