@@ -3,8 +3,14 @@
 ## How to setup?
 
 1. `$ git clone https://github.com/EmanuelDubor/scala-vainilla.git`
-2. `$ git clone https://github.com/EmanuelDubor/scala-vainilla-demo-template.git`
+2. `$ git clone https://github.com/EmanuelDubor/scala-vainilla-demo-arkanoid.git`
 
-## How to play?
+#### How to run?
 
-Run `DesktopLauncher` as main class and set its working directory to `/core/assets`
+1. `$ cd scala-vainilla-demo-arkanoid/desktop`
+2. `$ gradle run`
+
+#### How to deploy?
+
+1. `$ cd scala-vainilla-demo-arkanoid/desktop`
+2. `$ gradle dist`
