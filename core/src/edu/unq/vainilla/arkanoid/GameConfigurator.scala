@@ -3,8 +3,9 @@ package edu.unq.vainilla.arkanoid
 import edu.unq.vainilla.core.configuration.{Configuration, Configurator}
 
 class GameConfigurator extends Configurator {
-  def configure(config: Configuration): Configuration = {
+  def configure(config: Configuration) = {
     config.title = "Scala Vainilla Arkanoid Demo"
-    config
+    config.mainScene = new ArkanoidMainScene
+    config.delegateInput
   }
 }
